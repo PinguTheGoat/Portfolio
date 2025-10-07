@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="icon" type="image/png" href="assets/images/logo.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.29.2/dist/feather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="src/scripts/script.js" defer></script>
+    <link rel="icon" type="image/png" href="assets/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="PortfoliobyLeb" />
+    <link rel="manifest" href="assets/images/site.webmanifest" />
+</head>
+<body id="top" class="bg-gray-900 text-gray-100 font-sans overflow-x-hidden">
+    <div id="vanta-bg" class="fixed inset-0 z-0"></div>
+    <div class="light-beam"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="sticky top-0 z-50 py-6 px-4 sm:px-6 lg:px-8 transition-all duration-300">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#top" class="text-2xl font-bold glow-text">PORTFOLIO</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-cyan-400 transition">About</a>
+                <a href="#work" class="hover:text-cyan-400 transition">Work</a>
+                <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
+                <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
+            </div>
+            <button class="md:hidden">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative z-10 min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 glow-text">
+                <span class="block">Hello, I'm</span>
+                <span class="text-cyan-400">Lebron</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto">
+                I build immersive digital experiences with modern technologies and innovative design.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#work" class="px-8 py-3 bg-cyan-500 hover:bg-cyan-600 rounded-full font-medium transition transform hover:scale-105">
+                    View Work
+                </a>
+                <a href="#contact" class="px-8 py-3 border border-cyan-400 hover:bg-cyan-900/30 rounded-full font-medium transition transform hover:scale-105">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="relative z-10 py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/80 backdrop-blur-sm">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center glow-text" data-aos="fade-up">ABOUT ME</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/3" data-aos="fade-right">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-200"></div>
+                        <img src="assets/images/LebronCatubaoPicture.png" alt="Picture of the developer named Lebron G. Catubao" class="relative rounded-lg w-full h-auto">
+                    </div>
+                </div>
+                <div class="w-full md:w-2/3" data-aos="fade-left">
+                    <h3 class="text-2xl font-bold mb-4 text-cyan-400">Who I Am</h3>
+                    <p class="text-lg mb-6">
+                        I'm a passionate full-stack developer with 5+ years of coding experience creating beautiful, functional digital products. My approach combines technical expertise with creative problem-solving to deliver exceptional user experiences.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center">
+                            <i data-feather="map-pin" class="mr-2 text-cyan-400"></i>
+                            <span>Philippines</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="briefcase" class="mr-2 text-cyan-400"></i>
+                            <span>Open to Work</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="award" class="mr-2 text-cyan-400"></i>
+                            <span>5 projects completed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="relative z-10 py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center glow-text" data-aos="fade-up">MY WORK</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-gray-800 rounded-xl p-6 transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative overflow-hidden rounded-lg mb-6 h-48">
+                        <img src="assets/images/projectOne.png" alt="Chess Website Project" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-cyan-500/10 backdrop-blur-sm flex items-center justify-center opacity-0 hover:opacity-100 transition">
+                            <a href="https://github.com/PinguTheGoat" class="px-6 py-2 bg-cyan-500 rounded-full font-medium">View Project</a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Chess Website</h3>
+                    <p class="text-gray-400 mb-4">A school project website about chess</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">HTML</span>
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">CSS</span>
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">JS</span>
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">Firebase</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card bg-gray-800 rounded-xl p-6 transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative overflow-hidden rounded-lg mb-6 h-48">
+                        <img src="assets/images/projectTwo.png" alt="Cafe Finder Website Project" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-cyan-500/10 backdrop-blur-sm flex items-center justify-center opacity-0 hover:opacity-100 transition">
+                            <a href="https://github.com/PinguTheGoat" class="px-6 py-2 bg-cyan-500 rounded-full font-medium">View Project</a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Cafe Finder</h3>
+                    <p class="text-gray-400 mb-4">A website that can help you find a near coffee shop</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">HTML</span>
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">CSS</span>
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">JS</span>
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">API</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card bg-gray-800 rounded-xl p-6 transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative overflow-hidden rounded-lg mb-6 h-48">
+                        <img src="assets/images/projectThree.png" alt="Augmented Reality Project" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-cyan-500/10 backdrop-blur-sm flex items-center justify-center opacity-0 hover:opacity-100 transition">
+                            <a href="https://github.com/PinguTheGoat" class="px-6 py-2 bg-cyan-500 rounded-full font-medium">View Project</a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">AR Mobile App</h3>
+                    <p class="text-gray-400 mb-4">Augmented reality experience for interior design</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">Unity</span>
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">Android Studio</span>
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">Vuforia</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12" data-aos="fade-up">
+                <a href="https://github.com/PinguTheGoat" class="inline-flex items-center px-6 py-3 border border-cyan-400 rounded-full font-medium hover:bg-cyan-900/30 transition">
+                    View All Projects
+                    <i data-feather="arrow-right" class="ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="relative z-10 py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/80 backdrop-blur-sm">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center glow-text" data-aos="fade-up">MY SKILLS</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Skill 1 -->
+                <div class="text-center p-6 bg-gray-800 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-cyan-900/20 rounded-full">
+                        <i data-feather="code" class="w-10 h-10 text-cyan-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Frontend</h3>
+                    <p class="text-gray-400">React, HTML5, CSS3, JavaScript</p>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="text-center p-6 bg-gray-800 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-cyan-900/20 rounded-full">
+                        <i data-feather="server" class="w-10 h-10 text-cyan-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Backend</h3>
+                    <p class="text-gray-400">Python, Java, C#</p>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="text-center p-6 bg-gray-800 rounded-xl" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-cyan-900/20 rounded-full">
+                        <i data-feather="database" class="w-10 h-10 text-cyan-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Database</h3>
+                    <p class="text-gray-400">Firebase, MySQL</p>
+                </div>
+
+                <!-- Skill 4 -->
+                <div class="text-center p-6 bg-gray-800 rounded-xl" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-cyan-900/20 rounded-full">
+                        <i data-feather="tool" class="w-10 h-10 text-cyan-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Tools</h3>
+                    <p class="text-gray-400">Git, Figma, Framer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="relative z-10 py-20 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center glow-text" data-aos="fade-up">GET IN TOUCH</h2>
+        <div class="bg-gray-800 rounded-xl p-8 md:p-12 shadow-xl" data-aos="fade-up">
+        
+        <!-- Contact Form -->
+        <form id="contactForm" class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+                <label for="name" class="block mb-2 font-medium">Name</label>
+                <input type="text" id="name" name="name" required
+                class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500">
+            </div>
+            <div>
+                <label for="email" class="block mb-2 font-medium">Email</label>
+                <input type="email" id="email" name="email" required
+                class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500">
+            </div>
+            </div>
+
+            <div>
+            <label for="subject" class="block mb-2 font-medium">Subject</label>
+            <input type="text" id="subject" name="subject" required
+                class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500">
+            </div>
+
+            <div>
+            <label for="message" class="block mb-2 font-medium">Message</label>
+            <textarea id="message" name="message" rows="5" required
+                class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"></textarea>
+            </div>
+
+            <button type="submit" 
+            class="w-full md:w-auto px-8 py-3 bg-cyan-500 hover:bg-cyan-600 rounded-full font-medium transition transform hover:scale-105">
+            Send Message
+            </button>
+        </form>
+
+        <!-- Success Message -->
+        <p id="successMessage" class="hidden mt-4 text-green-400 font-medium text-center">
+            Thank you! Your message has been sent.
+        </p>
+        
+        <!-- Error Message -->
+        <p id="errorMessage" class="hidden mt-4 text-red-400 font-medium text-center">
+            Oops! Something went wrong. Please try again.
+        </p>
+
+        </div>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative z-10 py-12 px-4 sm:px-6 lg:px-8 bg-gray-900/90 backdrop-blur-sm">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-2xl font-bold glow-text">PORTFOLIO</a>
+                    <p class="mt-2 text-gray-400">© 2025 All rights reserved</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://github.com/PinguTheGoat" class="text-gray-400 hover:text-cyan-400 transition">
+                        <i data-feather="github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/catubao-lebron-g-056516334/" class="text-gray-400 hover:text-cyan-400 transition">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_leb.ctb/" class="text-gray-400 hover:text-cyan-400 transition">
+                        <i data-feather="instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="loading-screen">
+        <div class="loader">
+            <div class="loader-1 bar"></div>
+            <div class="loader-2 bar"></div>
+        </div>
+        <div class="counter">
+            <div class="counter-1 digit">
+                <div class="num">0</div>
+                <div class="num num1offset1">1</div>
+            </div>
+            <div class="counter-2 digit">
+                <div class="num">0</div>
+                <div class="num num1offset2">1</div>
+                <div class="num">2</div>
+                <div class="num">3</div>
+                <div class="num">4</div>
+                <div class="num">5</div>
+                <div class="num">6</div>
+                <div class="num">7</div>
+                <div class="num">8</div>
+                <div class="num">9</div>
+                <div class="num">0</div>
+            </div>
+            <div class="counter-3 digit">
+                <div class="num">0</div>
+                <div class="num">1</div>
+                <div class="num">2</div>
+                <div class="num">3</div>
+                <div class="num">4</div>
+                <div class="num">5</div>
+                <div class="num">6</div>
+                <div class="num">7</div>
+                <div class="num">8</div>
+                <div class="num">9</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
